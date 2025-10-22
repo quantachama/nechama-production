@@ -1,0 +1,89 @@
+@keyframes blob {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+.animate-blob { animation: blob 7s infinite; }
+.animation-delay-2000 { animation-delay: 2s; }
+.animation-delay-4000 { animation-delay: 4s; }
+
+body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #5a9b7d; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #1a3b2b; }
+
+/* Lightbox Styles */
+.lightbox-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(26,59,43,0.85);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn .2s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.lightbox-content {
+  position: relative;
+  width: 80%;
+  max-width: 1000px;
+  max-height: 90vh;
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  animation: scaleIn .25s ease-in-out;
+}
+@keyframes scaleIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.lightbox-image, .lightbox-iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.lightbox-iframe {
+  border: none;
+  height: 85vh;
+}
+.lightbox-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  color: #1a3b2b;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform .2s ease;
+}
+.lightbox-close:hover { transform: scale(1.2); }
+.fade-out { animation: fadeOut .2s ease-in-out forwards; }
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .lightbox-content {
+    width: 95%;
+    height: auto;
+    max-height: 90vh;
+  }
+  .lightbox-iframe {
+    height: 70vh;
+  }
+}

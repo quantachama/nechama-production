@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nechama Production | Design by JP</title>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+  <meta name="description" content="Nechama Production | Design by JP — blending industrial and graphic design into thoughtful, future-oriented experiences.">
+  <meta property="og:title" content="Nechama Production | Design by JP">
+  <meta property="og:description" content="Explore JP’s portfolio — industrial and graphic designer shaping sustainable, empathetic design experiences.">
+  <meta property="og:image" content="./assets/preview.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#5a9b7d">
+    
+<link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            jade: { 100: '#d5eee0', 500: '#5a9b7d', 900: '#1a3b2b' },
+            graphite: { 100: '#e6e6e6', 500: '#4d4d4d', 900: '#1a1a1a' },
+            accent: { 500: '#FF9F1C' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Small helper so content isn't hidden under fixed navbar */
+    :root { --nav-h: 76px; }
+    main { margin-top: var(--nav-h); }
+  </style>
+</head>
+<body class="bg-graphite-100 text-graphite-900 font-sans">
+  <custom-navbar></custom-navbar>
+
+  <main>
+    <!-- Hero -->
+    <section class="relative min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-jade-100 to-white overflow-hidden">
+      <div class="absolute inset-0 opacity-30 pointer-events-none">
+        <div class="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-jade-500 mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+        <div class="absolute top-1/3 right-1/4 w-64 h-64 rounded-full bg-graphite-100 mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+        <div class="absolute bottom-1/4 right-1/3 w-64 h-64 rounded-full bg-jade-900 mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+      </div>
+
+      <div class="relative container mx-auto px-6 py-24 z-10 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+          <span class="block text-graphite-900">Hello, I’m Jana —</span>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-jade-900 to-jade-500">
+            blending industrial and graphic design into thoughtful, future-oriented experiences.
+          </span>
+        </h1>
+        <p class="text-lg md:text-xl text-graphite-700 max-w-2xl mx-auto mb-10">
+          Shenkar-trained designer shaping meaningful objects, visuals, and systems with precision, empathy, and curiosity.
+        </p>
+        <div class="flex gap-4 justify-center">
+          <a href="#portfolio" class="px-8 py-4 bg-jade-900 hover:bg-jade-500 text-white font-medium rounded-full transition duration-300 shadow-lg hover:shadow-xl">
+            Explore My Work
+          </a>
+          <a href="#contact" class="px-8 py-4 bg-white hover:bg-graphite-100 text-graphite-900 font-medium rounded-full transition duration-300 shadow-lg hover:shadow-xl border border-graphite-100">
+            Get In Touch
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-24 bg-graphite-100">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <div class="md:w-1/2">
+            <img src="./assets/jana-portrait.jpg" alt="JP portrait" class="rounded-2xl shadow-xl w-full max-w-md mx-auto" loading="lazy">
+          </div>
+          <div class="md:w-1/2">
+            <h2 class="text-4xl font-bold mb-6 text-graphite-900">About</h2>
+            <p class="text-lg text-graphite-800 mb-4">
+              I’m JP (Jana), an industrial and graphic designer educated at <strong>Shenkar</strong>. My work bridges
+              product systems, graphic storytelling, and human‑centered experiences.
+            </p>
+            <p class="text-lg text-graphite-800 mb-4">
+              I care about materials, sustainability, and the emotional life of objects. From home spirulina
+              installations to modular baby products and music‑tech visuals, I design with precision,
+              empathy, and curiosity.
+            </p>
+            <ul class="text-graphite-800 grid grid-cols-1 sm:grid-cols-2 gap-2 mb-8">
+              <li class="flex items-center gap-2"><i data-feather="check-circle"></i><span>Industrial + Graphic Design</span></li>
+              <li class="flex items-center gap-2"><i data-feather="check-circle"></i><span>Sustainable product thinking</span></li>
+              <li class="flex items-center gap-2"><i data-feather="check-circle"></i><span>Clear, elegant presentation decks</span></li>
+              <li class="flex items-center gap-2"><i data-feather="check-circle"></i><span>Hands‑on prototyping</span></li>
+            </ul>
+            <a href="#contact" class="inline-flex items-center px-8 py-4 bg-jade-900 hover:bg-jade-500 rounded-full text-white font-medium transition duration-300 shadow-lg hover:shadow-xl">
+              Work with me
+              <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+	
+    <!-- Portfolio -->
+    <section id="portfolio" class="py-24 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4 text-graphite-900">Selected Work</h2>
+          <p class="text-xl text-graphite-600 max-w-2xl mx-auto">
+            A cross‑section of product systems, brand pieces, and visual narratives.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- SpirUday System -->
+          <a href="./assets/spiruday-cover.jpg" target="_blank" class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition duration-500">
+            <img src="./assets/spiruday-cover.jpg" alt="SpirUday System" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-graphite-900 to-transparent opacity-80"></div>
+            <div class="absolute bottom-0 left-0 p-6 text-white">
+              <h3 class="text-2xl font-bold mb-2">SpirUday System</h3>
+              <p class="text-gray-200 mb-3">Sustainable home spirulina cultivation</p>
+              <div class="flex gap-2 text-sm">
+                <span class="px-3 py-1 bg-jade-900 rounded-full">Product</span>
+                <span class="px-3 py-1 bg-graphite-900 rounded-full">Sustainability</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- EMEO Flyer -->
+          <a href="./assets/emeo-flyer.jpg" target="_blank" class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition duration-500">
+            <img src="./assets/emeo-flyer.jpg" alt="EMEO Flyer" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-graphite-900 to-transparent opacity-80"></div>
+            <div class="absolute bottom-0 left-0 p-6 text-white">
+              <h3 class="text-2xl font-bold mb-2">EMEO Flyer</h3>
+              <p class="text-gray-200 mb-3">music | innovation | technology</p>
+              <div class="flex gap-2 text-sm">
+                <span class="px-3 py-1 bg-jade-900 rounded-full">Graphic</span>
+                <span class="px-3 py-1 bg-graphite-900 rounded-full">Promo</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- EMEO T-shirt design -->
+          <a href="./assets/emeo-shirt.jpg" target="_blank" class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition duration-500">
+            <img src="./assets/emeo-shirt.jpg" alt="EMEO T-shirt Design" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-graphite-900 to-transparent opacity-80"></div>
+            <div class="absolute bottom-0 left-0 p-6 text-white">
+              <h3 class="text-2xl font-bold mb-2">EMEO T‑shirt</h3>
+              <p class="text-gray-200 mb-3">music | innovation | technology</p>
+              <div class="flex gap-2 text-sm">
+                <span class="px-3 py-1 bg-jade-900 rounded-full">Graphic</span>
+                <span class="px-3 py-1 bg-graphite-900 rounded-full">Merch</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Sleepybump magic tray (PDF) -->
+          <a href="./assets/sleepybump-tray.pdf" target="_blank" class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition duration-500">
+            <img src="./assets/sleepybump-tray-cover.jpg" alt="Sleepybump Magic Tray" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-graphite-900 to-transparent opacity-80"></div>
+            <div class="absolute bottom-0 left-0 p-6 text-white">
+              <h3 class="text-2xl font-bold mb-2">Sleepybump – Magic Tray</h3>
+              <p class="text-gray-200 mb-3">modular design + graphic presentation (PDF)</p>
+              <div class="flex gap-2 text-sm">
+                <span class="px-3 py-1 bg-jade-900 rounded-full">Product</span>
+                <span class="px-3 py-1 bg-graphite-900 rounded-full">Deck</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Car design cover art (image) -->
+          <a href="./assets/car-cover-art.jpg" target="_blank" class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition duration-500">
+            <img src="./assets/car-cover-art.jpg" alt="Car Design Cover Art" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-graphite-900 to-transparent opacity-80"></div>
+            <div class="absolute bottom-0 left-0 p-6 text-white">
+              <h3 class="text-2xl font-bold mb-2">Car Design – Cover Art</h3>
+              <p class="text-gray-200 mb-3">visual storytelling</p>
+              <div class="flex gap-2 text-sm">
+                <span class="px-3 py-1 bg-jade-900 rounded-full">Graphic</span>
+                <span class="px-3 py-1 bg-graphite-900 rounded-full">Artwork</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Thought Constructions (PDF) -->
+          <a href="./assets/thought-constructions.pdf" target="_blank" class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition duration-500">
+            <img src="./assets/thought-constructions-cover.jpg" alt="Thought Constructions A5 Book" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-graphite-900 to-transparent opacity-80"></div>
+            <div class="absolute bottom-0 left-0 p-6 text-white">
+              <h3 class="text-2xl font-bold mb-2">Thought Constructions</h3>
+              <p class="text-gray-200 mb-3">A5 experimental art book (PDF)</p>
+              <div class="flex gap-2 text-sm">
+                <span class="px-3 py-1 bg-jade-900 rounded-full">Art</span>
+                <span class="px-3 py-1 bg-graphite-900 rounded-full">Editorial</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="text-center mt-16">
+          <a href="#contact" class="inline-flex items-center px-8 py-4 border border-graphite-100 bg-white hover:bg-graphite-50 rounded-full text-graphite-900 font-medium transition duration-300 shadow-md hover:shadow-lg">
+            Let’s Stay Connected
+            <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="max-w-3xl mx-auto">
+          <div class="text-center mb-10">
+            <h2 class="text-4xl font-bold mb-4 text-graphite-900">Get In Touch</h2>
+            <p class="text-lg text-graphite-700">Have a project in mind? Let’s create something exceptional.</p>
+          </div>
+
+          <form id="contactForm" action="https://formspree.io/f/movjvjqy" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="name" class="block text-graphite-800 mb-2">Your Name</label>
+              <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border border-graphite-100 focus:outline-none focus:ring-2 focus:ring-jade-500 focus:border-transparent transition duration-300">
+            </div>
+            <div>
+              <label for="email" class="block text-graphite-800 mb-2">Email Address</label>
+              <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-graphite-100 focus:outline-none focus:ring-2 focus:ring-jade-500 focus:border-transparent transition duration-300">
+            </div>
+            <div class="md:col-span-2">
+              <label for="subject" class="block text-graphite-800 mb-2">Subject</label>
+              <input type="text" id="subject" name="subject" class="w-full px-4 py-3 rounded-lg border border-graphite-100 focus:outline-none focus:ring-2 focus:ring-jade-500 focus:border-transparent transition duration-300">
+            </div>
+            <div class="md:col-span-2">
+              <label for="message" class="block text-graphite-800 mb-2">Your Message</label>
+              <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 rounded-lg border border-graphite-100 focus:outline-none focus:ring-2 focus:ring-jade-500 focus:border-transparent transition duration-300"></textarea>
+            </div>
+            <!-- Helper hidden fields -->
+            <input type="hidden" name="_subject" value="New Inquiry via Nechama Production Portfolio" />
+            <input type="text" name="_gotcha" style="display:none">
+            <div class="md:col-span-2 text-center">
+              <button type="submit" class="px-12 py-4 bg-jade-900 hover:bg-jade-500 rounded-full text-white font-medium transition duration-300 shadow-lg hover:shadow-xl inline-flex items-center">
+                Send Message ✨
+                <i data-feather="send" class="ml-2 w-5 h-5"></i>
+              </button>
+              <p id="formStatus" class="mt-4 text-sm"></p>
+            </div>
+          </form>
+
+          <div class="mt-10 text-center text-graphite-700">
+            <p>📍 Tel Aviv / Berlin</p>
+            <p>📞 <a href="tel:+972549175734" class="underline">+972 54 917 5734</a></p>
+            <p>📧 <a href="mailto:jp.idisegno@gmail.com" class="underline">jp.idisegno@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <custom-footer></custom-footer>
+
+  <!-- Use fixed filenames in this folder -->
+  <script src="navbar.js"></script>
+  <script src="footer.js"></script>
+  <script src="sript.js"></script>
+  <script>feather.replace();</script>
+</body>
+</html>
